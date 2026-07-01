@@ -5,8 +5,8 @@ dependency:
   options:
     ignore-certs: false
     ignore-errors: false
-    role-file: molecule/requirements.yml
-    requirements-file: molecule/requirements.yml
+    role-file: tests/requirements.yml
+    requirements-file: tests/requirements.yml
 
 provisioner:
   name: ansible
