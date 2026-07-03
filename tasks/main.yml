@@ -8,5 +8,5 @@
 #   ansible.builtin.debug:
 #     var: ansible_connection
 
-- name: KopiaInstall | Include OS specific main({{ ansible_facts['os_family'] }})
-  ansible.builtin.include_tasks: "main_{{ ansible_facts['os_family'] }}.yml"
+- name: KopiaInstall | Include OS specific install({{ ansible_facts['os_family'] }})
+  ansible.builtin.include_tasks: "install_{{ ansible_facts['os_family'] }}.yml"
