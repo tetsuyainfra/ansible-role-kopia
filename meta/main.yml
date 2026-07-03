@@ -2,11 +2,11 @@
 ---
 galaxy_info:
   namespace: tetsuyainfra
-  role_name: kopia_install
+  role_name: kopia
   standalone: true
 
   author: tetsuyainfra
-  description: kopia install role
+  description: kopia install/configure role
   company: tetsuyainfra's private
 
   # If the issue tracker for your role is not on github, uncomment the
