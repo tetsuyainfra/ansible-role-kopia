@@ -6,4 +6,4 @@
   vars:
     kopia_install: true
   roles:
-    - tetsuyainfra.kopia_install
+    - tetsuyainfra.kopia

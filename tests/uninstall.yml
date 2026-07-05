@@ -7,4 +7,4 @@
     kopia_install: false
     kopia_uninstall: true
   roles:
-    - tetsuyainfra.kopia_install
+    - tetsuyainfra.kopia
