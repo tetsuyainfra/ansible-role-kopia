@@ -10,3 +10,7 @@
 
 - name: KopiaInstall | Include OS specific install({{ ansible_facts['os_family'] }})
   ansible.builtin.include_tasks: "install_{{ ansible_facts['os_family'] }}.yml"
+
+
+- name: KopiaInstall | Include Config tasks
+  ansible.builtin.include_tasks: "configure.yml"

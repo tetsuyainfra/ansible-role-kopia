@@ -1,0 +1,11 @@
+---
+- name: Kopia | Create kopia config directory
+  ansible.builtin.file:
+    path: "{{ item.config_path | dirname }}"
+    state: directory
+    owner: root
+    group: root
+    mode: '0755'
+  loop: "{{ kopia_config }}"
+  loop_control:
+    label: "{{ item.name }}"
