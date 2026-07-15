@@ -24,8 +24,8 @@ script = [
 [hooks.leave]
 shell = "bash"
 script = [
-    "complete -r ansible-playbook",
-    "complete -r ansible-vault",
-    "complete -r ansible-lint",
-    "complete -r molecule"
+    "complete -r ansible-playbook 2>/dev/null || true",
+    "complete -r ansible-vault 2>/dev/null || true ",
+    "complete -r ansible-lint 2>/dev/null || true",
+    "complete -r molecule 2>/dev/null || true"
 ]
